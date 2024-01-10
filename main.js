@@ -27,14 +27,21 @@ function play(){
 const CompanyEmail = ["alice@email.com", "bob@email.com", "carlo@email.com", "davide@email.com","eva@email.com"];
 
 
+const container = document.createElement("div");
+container.setAttribute("id", "response");
+document.body.appendChild(container);
+
 function checkEmail(){
- let isValid = isEmailValid();
+let isValid = isEmailValid();
+const responseDiv = document.getElementById("response");
  if (isValid) {
-    console.log("Puoi entrare");
+responseDiv.innerHTML = "puoi entrare";
 } else {
-    console.log("Non entraaaaaa");
+responseDiv.innerHTML = `<img src="./img/nonentra.jpg">`
 }
 }
+
+
 
 function isEmailValid(){
     let Email = document.getElementById("userEmail").value;
@@ -45,3 +52,4 @@ function isEmailValid(){
     }
     return false;
 }
+

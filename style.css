@@ -5,8 +5,11 @@
     font-family: sans-serif;
 }
 
-section{
+body{
     text-align: center;
+}
+
+section{
     padding: 2em;
 }
 
@@ -23,12 +26,6 @@ section button {
     cursor: pointer;
 }
 
-h1{
-    margin-block: 2rem;
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: darkred;
-}
 
 h2{
     margin-block: 2em;
@@ -43,4 +40,35 @@ img {
     width: 100px;
     height: 100px;
     margin-inline: 20px;
+}
+
+form {
+    text-align: center;
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px 20px;
+}
+
+form input:nth-last-child(1){
+    background-color: lightblue;
+    border: transparent;
+    border: 2px solid lightseagreen;
+    border-radius: 5px
+}
+
+img:last-of-type {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#response {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: green;
+    font-weight: bold;
 }

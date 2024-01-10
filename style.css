@@ -2,8 +2,45 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family: sans-serif;
 }
 
 section{
     text-align: center;
+    padding: 2em;
+}
+
+section div {
+    margin-block: 2em;
+}
+section button {
+    background-color: lightskyblue;
+    border: transparent;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+h1{
+    margin-block: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: darkred;
+}
+
+h2{
+    margin-block: 2em;
+}
+
+span{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin-inline: 20px;
 }

@@ -24,22 +24,24 @@ function play(){
 }
 
 
-const CompanyEmail = ["alice@email.com", "bob@email.com", "carlo@email.com", "davide@email.com", "eva@email.com"];
+const CompanyEmail = ["alice@email.com", "bob@email.com", "carlo@email.com", "davide@email.com","eva@email.com"];
 
-function checkEmail() {
-    let validEmail = false;
+
+function checkEmail(){
+ let isValid = isEmailValid();
+ if (isValid) {
+    console.log("Puoi entrare");
+} else {
+    console.log("Non entraaaaaa");
+}
+}
+
+function isEmailValid(){
     let Email = document.getElementById("userEmail").value;
-
-    for (let i = 0; i < CompanyEmail.length; i++) {
-        if (Email === CompanyEmail[i]) {
-            validEmail = true;
-            break; // exit the loop once a valid email is found
+    for (let i = 0; i < CompanyEmail.length; i++){
+        if (Email === CompanyEmail[i]){
+         return  true;
         }
     }
-
-    if (validEmail) {
-        console.log("Puoi entrare");
-    } else {
-        console.log("Non entraaaaaa");
-    }
+    return false;
 }
